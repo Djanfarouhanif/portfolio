@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color :#050f0f;
+    --navbar-color: #e9e5e7
+
+}
+
+body{
+    background: var(--background-color);
+}
+/* ----------------partie nav_bar ---------------------*/
+.navBar{
+        background: var(--navbar-color);
+        height: 100vh;
+        
+        
+        
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.navBar nav {
+    margin: 10px;
+    position: absolute;
+    top: 40%;
+    
+}
+
+ul li a{
+    outline: none;
+    text-decoration: none;
+       
+}
+ul li ion-icon{
+    padding-right: 10px;
+    font-size: 20px;
+}
+ul li{
+    list-style: none;
+    margin: 0 0 20px 0;
+    transition: transform ;
+    
+}
+
+span{
+    position:absolute;
+    color: red;
+    transform: translateX(-50px);
+    transition: transform 3s ;
+    
+
+   
+}
+
+span:hover {
+    transform: translateX(0);
+    transition: all 2s;
+     
+}
+
+li:hover{
+    background: rgb(71, 102, 255);
+    padding-right: 40px;
+}
+/*============Fin==================*/
