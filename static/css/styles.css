@@ -6,8 +6,9 @@
 
 :root{
     --background-color :#050f0f;
-    --navbar-color: #fffbfe;
-    --button-color: #219ebc;
+    --navbar-color: #ffffff;
+    --button-color: #00a8e8;
+    --text-color: #030406;
 
 }
 
@@ -45,7 +46,7 @@ ul li a{
 ul li ion-icon{
     padding-right: 10px;
     font-size: 20px;
-    color: var(--background-color);
+    color: var(--text-color);
 }
 ul li{
     list-style: none;
@@ -54,9 +55,9 @@ ul li{
     
 }
 
-span{
+li a span{
     position: absolute;
-    color: red;
+    color: var(--text-color);
     transform: translateX(-50px);
     transition:all  0.9s ;
     z-index: -1;  
@@ -95,11 +96,19 @@ a:hover{
 .titre{
     margin: 20px;
 }
+.titre h1{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.titre h1 span{
+    margin-right: 10px;
+    color: var(--button-color)
+}
 .profile-image div{
-    flex: 2;
     width: 200px;
     border-radius: 50%;
-    border: 20px solid white;
+    border: 20px solid var(--button-color);
+    padding: 0px;
 }
 
 .profile-image img{
@@ -114,10 +123,53 @@ a:hover{
 .description{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    margin-left: 20px;
 }
 .description div{
-    width: 50%;
+    width: 70%;
     line-height: 20px;
 }
+.logo{
+    position: relative;
+    left: -20px;
+}
+.logo img{
+
+    width: 100px;
+
+}
 /*==============Fin==================*/
+
+/*----------Responsive-----------------*/
+
+@media only screen and (max-width:800px){
+   .description{
+    justify-content: flex-start;
+    margin-left: 10px;
+   }
+   .description div{
+    width: 100%;
+   }
+
+   .container{
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.content{
+    margin: 50px auto;
+    padding: 10px;
+    gap: 20px;
+}   
+    .profile-image div{
+    width: 120px;
+    border-radius: 50%;
+    border: 20px solid white;
+    padding: 0px;
+}
+.titre{
+    font-size: 12px;
+    margin: 0px;
+}
+
+}
