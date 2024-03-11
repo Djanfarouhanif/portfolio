@@ -78,6 +78,10 @@ a:hover{
     transition: all 0.9s;
     background: var(--button-color);
 }
+.menu{
+    margin: 100px auto;
+    font-size: 40px;
+}
 /*============Fin==================*/
 
 /*--------------Partie body -------------------*/
@@ -106,6 +110,7 @@ a:hover{
 }
 .profile-image div{
     width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 20px solid var(--button-color);
     padding: 0px;
@@ -262,6 +267,7 @@ input:checked + .btn::before{
     }   
         .profile-image div{
         width: 120px;
+        height: 120px;
         border-radius: 50%;
     
         padding: 0px;
