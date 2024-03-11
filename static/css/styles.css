@@ -206,8 +206,37 @@ input:checked + .btn::before{
     border-radius: 50%;
 }
 
-/*==============Fin==================*/
+/*==============Fin========*==========*/
+/*================logo===============*/
+.carre{
+    position: relative;
+    background-color: black;
+    width: 70px;
+    height: 70px;
+}
 
+.carre h1{
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: -40px;
+    font-size: 50px ;
+
+}
+
+.carre h2{
+    color: rgb(0, 81, 255);
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+}
+
+.carre h3{
+    position: absolute;
+    color: rgb(0,81,255);
+    top: 19px;
+    left: 18px;
+}
 /*----------Responsive-----------------*/
 
 @media only screen and (max-width:800px){
