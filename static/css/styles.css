@@ -137,10 +137,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
 }
-.logo img{
-    width: 100px;
-    
-}
+
 
 .background{
     margin-top: 20px;
@@ -208,34 +205,36 @@ input:checked + .btn::before{
 
 /*==============Fin========*==========*/
 /*================logo===============*/
-.carre{
+.logo .carre{
     position: relative;
     background-color: black;
     width: 70px;
     height: 70px;
+    margin-left: -15px;
 }
 
-.carre h1{
-    color: #fff;
-    position: absolute;
+.logo .carre h1{
+    color: var(--navbar-color);
+    position: relative;
     left: 20px;
-    top: -40px;
-    font-size: 50px ;
+    font-size: 40px ;
 
 }
 
-.carre h2{
-    color: rgb(0, 81, 255);
+.logo .carre h2{
+    color: var(--button-color);
     position: absolute;
-    left: 30px;
-    bottom: 10px;
+    left: 27px;
+    top: 15px;
+    font-size: 20px;
 }
 
-.carre h3{
+.logo .carre h3{
     position: absolute;
-    color: rgb(0,81,255);
-    top: 19px;
-    left: 18px;
+    color: var(--button-color);
+    top: 40px;
+    left: 20px;
+    font-size: 15px;
 }
 /*----------Responsive-----------------*/
 
@@ -261,7 +260,7 @@ input:checked + .btn::before{
     .profile-image div{
     width: 120px;
     border-radius: 50%;
-    border: 20px solid white;
+   
     padding: 0px;
 }
 .titre{
