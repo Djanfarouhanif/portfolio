@@ -6,18 +6,19 @@
 
 :root{
    
-    --background-color :#ffff;
-    --navbar-color: black;
-    --button-color: #00a8e8;
-    --text-color: #ffffff;
-
-}
-
-.dark-theme{
+   
     --background-color :black;
     --navbar-color: #fff;
     --button-color: #00a8e8;
     --text-color: black;
+
+}
+
+.dark-theme{
+    --background-color :#ffff;
+    --navbar-color: black;
+    --button-color: #00a8e8;
+    --text-color: #ffffff;
 }
 
 body{
@@ -38,7 +39,7 @@ body{
 }
 
 .navBar nav {
-    margin: 250px auto;
+    margin: 150px auto;
        
 }
 ul{
@@ -90,6 +91,7 @@ a:hover{
     margin: 100px auto;
     font-size: 40px;
     color: var(--background-color);
+    display: none;
 }
 /*============Fin==================*/
 
@@ -97,8 +99,8 @@ a:hover{
 .content{
     color: var(--navbar-color);
     width: 100%;
-    padding: 50px;
-    margin: 100px auto;
+    padding: 50px 50px 0 50px;
+    margin: 100px auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -304,10 +306,51 @@ input:checked + .btn::before{
         margin: 0px;
     }
     .navBar{
-        width: 40px;
+        width: 0px;
         /*transform: translateX(-100px);*/
         opacity: .9;
+        transition: .4s;
         
     }
+    .navBar-res{
+        width: 400px;
+        transition: .4s;
+    }
+    a:hover{
+      
+        background: none;
+    }
+    .navBar li span{
+        transform: translateX(-100px);
+    }
+    .navBar li ion-icon{
+        visibility: visible;
+        
+    }
+    
+   
+    .link:hover{
+        z-index: 1;
+        transform: translateX(0);
+        transition: all 0.9s;
+        background: var(--button-color);
+        visibility: visible;
+        
+    }
+    .navBar ul li:hover .span{
+        visibility: visible;
+        transform: translateX(0px);
+        
+    }
+    .menu{
+        margin: 58px auto;
+        margin-left: -20px;
+        font-size: 40px;
+        color: var(--navbar-color);
+        display: block;
+        transform: translateX(20px);
+        
+    }
+    
 
 }
