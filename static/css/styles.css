@@ -134,11 +134,13 @@ a:hover{
 .description{
     width: 100%;
     display: flex;
-    margin-left: 20px;
+    align-items: center;
+
 }
 .description div{
-    width: 70%;
+    width: 65%;
     line-height: 20px;
+    text-align: center;
 }
 .logo{
     position: fixed;
