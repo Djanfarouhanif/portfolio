@@ -89,6 +89,7 @@ a:hover{
 .menu{
     margin: 100px auto;
     font-size: 40px;
+    color: var(--background-color);
 }
 /*============Fin==================*/
 
