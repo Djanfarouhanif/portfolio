@@ -1,7 +1,9 @@
 const sliderBtn = document.querySelector("#slider");
-const styleCss = document.documentElement.style
+const styleCss = document.documentElement.style;
 if (localStorage.getItem('sliderState')==='checked'){
     sliderBtn.checked = true;
+    document.body.classList.add("dark-theme");
+    
     
 }
 
@@ -9,7 +11,8 @@ if (localStorage.getItem('sliderState')==='checked'){
 sliderBtn.addEventListener('change', function(){
   
     localStorage.setItem('sliderState', this.checked ? 'checked': 'unchecked');
-    console.log(localStorage.getItem('sliderState'));
+    document.body.classList.toggle(("dark-theme"))
    
 })
+
 

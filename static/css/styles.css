@@ -5,11 +5,19 @@
 }
 
 :root{
+   
+    --background-color :#ffff;
+    --navbar-color: black;
+    --button-color: #00a8e8;
+    --text-color: #ffffff;
+
+}
+
+.dark-theme{
     --background-color :black;
-    --navbar-color: #ffffff;
+    --navbar-color: #fff;
     --button-color: #00a8e8;
     --text-color: black;
-
 }
 
 body{
@@ -179,7 +187,7 @@ a:hover{
 }
 
 .slider .btn {
-    background: #cccccc;
+    background: var(--navbar-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -198,17 +206,18 @@ a:hover{
     left: 4px;
     bottom: 4px;
     width: 20px;
-    background-color: var(--navbar-color);
+    background-color: var(--background-color);
     -webkit-transition: .4s;
     transition: .4s;
 }
 input:checked + .btn{
-    background-color: var(--button-color);
+    background-color: var(--navbar-color);
 }
 input:checked + .btn::before{
     transform: translateX(40px);
     -moz-transform: translateX(40px);
     -webkit-transform: translateX(40px);
+   
 
 }
 .btn{
@@ -221,9 +230,12 @@ input:checked + .btn::before{
 
 /*==============Fin========*==========*/
 /*================logo===============*/
+.logo{
+    background-color: var(--background-color);
+}
 .logo .carre{
     position: relative;
-    background-color: black;
+    background-color: var(--background-color);
     width: 70px;
     height: 70px;
     margin-left: -15px;
@@ -252,6 +264,7 @@ input:checked + .btn::before{
     left: 20px;
     font-size: 15px;
 }
+
 /*----------Responsive-----------------*/
 
 @media only screen and (max-width:900px){
