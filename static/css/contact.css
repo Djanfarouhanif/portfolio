@@ -1,0 +1,67 @@
+:root{
+   
+   
+    --background-color :black;
+    --navbar-color: #fff;
+    --button-color: #00a8e8;
+    --text-color: black;
+
+}
+
+.dark-theme{
+    --background-color :#ffff;
+    --navbar-color: black;
+    --button-color: #00a8e8;
+    --text-color: #ffffff;
+}
+
+.content-form{
+    width: 500px;
+    display: block;
+    margin: 100px auto;
+    margin-bottom: 0;
+}
+
+form{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--navbar-color);
+    border-radius: 15px;
+}
+
+
+.name, .email,  #message{
+   margin: 20px;
+   width: 100%;
+   background: var(--background-color);
+   border-radius: 15px;
+   padding: 10px;
+   
+}
+.email input, .name input{
+   background: var(--background-color);
+   width: 100%;
+   color: var(--navbar-color);
+}
+
+p{
+    color: var(--navbar-color);
+    margin: 20px;
+}
+form input{
+
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 10px; 
+}
+
+.message textarea{
+    
+    background: wheat;
+    color: var(--navbar-color);
+    border: none;
+}
