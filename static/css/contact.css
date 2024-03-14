@@ -23,13 +23,16 @@
 }
 
 form{
-    border: 2px solid black;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: var(--navbar-color);
     border-radius: 15px;
+    opacity: .5;
+    box-shadow: 0 0  4px var(--navbar-color);
+
 }
 
 
@@ -40,16 +43,22 @@ form{
    border-radius: 15px;
    padding: 10px;
    
+   
+   
 }
 .email input, .name input{
    background: var(--background-color);
    width: 100%;
-   color: var(--navbar-color);
+   font-weight: bold;
+   font-size: large;
+
+   
 }
 
 p{
     color: var(--navbar-color);
     margin: 20px;
+   
 }
 form input{
 
@@ -57,11 +66,24 @@ form input{
     outline: none;
     border: none;
     padding: 10px; 
+    
 }
 
+
 .message textarea{
-    
     background: wheat;
     color: var(--navbar-color);
     border: none;
+    
+}
+
+@media only screen and (max-width: 800px){
+
+    .content-form{
+        width: 400px;
+        display: block;
+        margin: 100px auto;
+        margin-bottom: 0;
+    }
+
 }
