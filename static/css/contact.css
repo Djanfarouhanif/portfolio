@@ -35,6 +35,7 @@
 form .email input{
     padding: 10px;
     margin: 10px;
+    margin-left: 0;
     outline: none;
     border-radius: 15px;
     font-size: 15px;
@@ -46,6 +47,7 @@ form .email input{
 form .name input{
     padding: 10px;
     margin: 10px;
+    margin-left: 0;
     outline: none;
     border-radius: 15px;
     font-size: 15px;
@@ -57,6 +59,8 @@ form .message textarea{
     outline: none;
     padding: 10px;
     margin: 10px;
+    margin-left: 0;
+    
     border-radius: 15px;
     background: #ccc;
     width: 100%;

@@ -6,9 +6,9 @@
 
 @media only screen and (max-width:900px){
     .about-me{
-        width: 40%;
+        width: 600px;
         position: relative;
-        left: -90px;
+        
     }
     
 }
