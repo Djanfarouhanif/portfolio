@@ -18,7 +18,7 @@
 
 .content-form{
     width: 500px;
-    margin: 200px auto;
+    margin: 100px auto;
     margin-bottom: 0;
    
 }
@@ -63,7 +63,7 @@ form .message textarea{
 form .button button{
     outline: none;
     position: relative;
-    left: 390px;
+    left: 380px;
     background: var(--button-color);
     padding: 10px;
     border-radius: 15px;
