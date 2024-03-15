@@ -3,3 +3,16 @@
     margin: 40px auto;
     margin-bottom: 0;
 }
+
+@media only screen and (max-width:900px){
+    .about-me{
+        width: 40%;
+        position: relative;
+        left: -90px;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+   
+}

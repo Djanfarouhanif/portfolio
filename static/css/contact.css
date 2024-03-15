@@ -101,3 +101,12 @@ p{
             left: 280px;
         }
 }
+
+@media only screen and (max-width:500px){
+    .content-form{
+        width: 300px;
+    }   
+    form .button button{
+        left: 185px;
+    }
+}

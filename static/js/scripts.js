@@ -39,7 +39,7 @@ menu.addEventListener('click', ()=>{
     
    if(menu.getAttribute('name')==='menu-outline'){
     menu.setAttribute('name', 'close-outline');
-    menu.style.transform = "translateX(400px)"
+    menu.style.transform = "translateX(200px)"
     menu.style.fontSize = "30px";
     
    }

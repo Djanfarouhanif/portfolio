@@ -142,3 +142,19 @@ button{
     }
 
 }
+
+@media only screen and (max-width:400px){
+        .project{
+            width: 250px;
+        }
+        .post{
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            width: 300px;
+        }
+        .projects-description h3{
+            margin-left: 35px;
+            text-align: center;
+        }
+}

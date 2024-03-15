@@ -296,8 +296,8 @@ input:checked + .btn::before{
         z-index: 1;
     }   
         .profile-image div{
-        width: 120px;
-        height: 120px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
        
     }
@@ -313,7 +313,7 @@ input:checked + .btn::before{
         
     }
     .navBar-res{
-        width: 400px;
+        width: 200px;
         transition: .4s;
         z-index: 2;
     }
@@ -354,4 +354,33 @@ input:checked + .btn::before{
     }
     
 
+}
+
+@media only screen and (max-width:600px){
+    .profile-image div{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+    }
+    .content{
+        width: 300px;
+    }
+
+    .description{
+        width: 300px;
+        margin-left: 0;
+    }
+    .profile{
+        position: relative;
+        left: -10px;
+    }
+    .navBar-res{
+        width: 200px;
+        transition: .4s;
+        z-index: 2;
+    }
+    
+
+    
 }
