@@ -7,7 +7,6 @@ const all_link = ul.querySelectorAll('a');
 const span = ul.querySelectorAll('span');
 
 
-
 if (localStorage.getItem('sliderState')==='checked'){
     sliderBtn.checked = true;
     document.body.classList.add("dark-theme");
