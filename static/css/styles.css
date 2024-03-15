@@ -286,7 +286,7 @@ input:checked + .btn::before{
    }
    .container{
     display: grid;
-        grid-template-columns: 100px auto;
+        grid-template-columns: 10px auto;
     }
 
     .content{

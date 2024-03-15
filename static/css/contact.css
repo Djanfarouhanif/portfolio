@@ -15,75 +15,89 @@
     --text-color: #ffffff;
 }
 
+
 .content-form{
     width: 500px;
-    display: block;
-    margin: 100px auto;
+    margin: 200px auto;
     margin-bottom: 0;
+   
 }
 
-form{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: var(--navbar-color);
+.form{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px var(--navbar-color);
+    margin-right: 20px;
+}
+
+form .email input{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
     border-radius: 15px;
-    opacity: .5;
-    box-shadow: 0 0  4px var(--navbar-color);
+    font-size: 15px;
+    background: #ccc;
+    width: 100%;
 
 }
 
-
-.name, .email,  #message{
-   margin: 20px;
-   width: 100%;
-   background: var(--background-color);
-   border-radius: 15px;
-   padding: 10px;
-   
-   
-   
+form .name input{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+    background: #ccc;
+    width: 100%;
 }
-.email input, .name input{
-   background: var(--background-color);
-   width: 100%;
-   font-weight: bold;
-   font-size: large;
 
-   
+form .message textarea{
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background: #ccc;
+    width: 100%;
+}
+
+form .button button{
+    outline: none;
+    position: relative;
+    left: 390px;
+    background: var(--button-color);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+.name input:focus, .email input:focus, .message textarea:focus{
+    box-shadow: 0 0 5px var(--button-color);
 }
 
 p{
-    color: var(--navbar-color);
+    position: relative;
+    color: var(--button-color);
+    width: 400px;
+    left: 50px;
     margin: 20px;
-   
-}
-form input{
+    font-size: 20px;
+    font-weight: bold;
 
-    text-decoration: none;
-    outline: none;
-    border: none;
-    padding: 10px; 
-    
 }
 
-
-.message textarea{
-    background: wheat;
-    color: var(--navbar-color);
-    border: none;
-    
-}
 
 @media only screen and (max-width: 800px){
+        p{
+            width: 300px;
+            z-index: -1;
+           
+        }
 
-    .content-form{
-        width: 400px;
-        display: block;
-        margin: 100px auto;
-        margin-bottom: 0;
-    }
-
+        .content-form{
+            width: 400px;
+            
+        }
+        form .button button{
+            left: 280px;
+        }
 }
