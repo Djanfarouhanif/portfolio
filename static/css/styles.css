@@ -101,7 +101,7 @@ a:hover{
     color: var(--navbar-color);
     width: 100%;
     padding: 10px 50px 0 50px;
-    margin: 150px auto 0;
+    margin: 100px auto 0;
 
 }
 
@@ -140,19 +140,22 @@ a:hover{
     align-items: center;
     justify-content: center;
 }
-.description{
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-}
-.description div{
-    position: relative;
-    width: 65%;
-    line-height: 20px;
-    left: 100px;
+.description-index{
+   margin: 100px auto;
+   display: flex;
+   justify-content: center;
     
 }
+
+.description-index div{
+    text-align: center;
+    background-color: green;
+    width: 200px;
+    border-radius: 10px;
+}
+
+    
+
 .logo{
     position: fixed;
     width: 100%;
