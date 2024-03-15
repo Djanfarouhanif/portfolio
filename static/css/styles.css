@@ -99,13 +99,9 @@ a:hover{
 .content{
     color: var(--navbar-color);
     width: 100%;
-    padding: 50px 50px 0 50px;
-    margin: 100px auto 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    padding: 10px 50px 0 50px;
+    margin: 150px auto 0;
+
 }
 
 .titre{
@@ -282,7 +278,7 @@ input:checked + .btn::before{
     left: 0;
    }
    .logo{
-    z-index: 1;
+    z-index: 3;
    }
    .container{
     display: grid;
@@ -290,10 +286,10 @@ input:checked + .btn::before{
     }
 
     .content{
-        margin: 50px auto;
+        margin: 90px auto;
         padding: 10px;
         gap: 20px;
-        z-index: -1;
+        z-index: 1;
     }   
         .profile-image div{
         width: 120px;
@@ -315,6 +311,7 @@ input:checked + .btn::before{
     .navBar-res{
         width: 400px;
         transition: .4s;
+        z-index: 2;
     }
     a:hover{
       

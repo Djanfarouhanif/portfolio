@@ -1,0 +1,96 @@
+:root{
+   
+   
+    --background-color :black;
+    --navbar-color: #fff;
+    --button-color: #00a8e8;
+    --text-color: black;
+
+}
+
+.dark-theme{
+    --background-color :#ffff;
+    --navbar-color: black;
+    --button-color: #00a8e8;
+    --text-color: #ffffff;
+}
+
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 0 0px;
+}
+
+.project figure{
+    width: 100%;
+    margin-bottom: 10px;
+     
+}
+
+.project figure img{
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+
+.project{
+    position: relative;
+    box-shadow: 0 0  3px var(--navbar-color);
+    width: 350px;
+    background: var(--navbar-color);
+    
+    
+}
+
+h2{
+    color: var(--button-color);
+}
+
+p{
+    color: var(--background-color);
+}
+img:hover{
+    transform: scale(1.02);
+    transition: .4s;
+}
+
+.projects-description{
+    width: 100%;
+    text-align: center;
+    color: var(--button-color);
+    margin-bottom: 20px;
+}
+button{
+    position: relative;
+    outline: none;
+    border: none;
+    color: var(--button-color);
+    margin-left: 4px;
+    background: var(--navbar-color);
+}
+@media only screen and (max-width:900px){
+    .projects-description{
+        font-size: 12px;
+        position: relative;
+        left: -50px;
+    }
+    .project-container{
+        position: relative;
+        left: 40px;
+       
+    }
+    .project figure{
+        width: 100%;
+        margin: none;
+        border: none;
+        z-index: 1;
+    }
+
+    .project{
+        width: 300px;
+    }
+
+    
+}
