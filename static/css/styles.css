@@ -77,13 +77,13 @@ li a span{
 
 
 
-a:hover span{
+li a:hover span{
     z-index: 1;
     transform: translateX(0);
     transition: all 0.9s;
 }
 
-a:hover{
+li a:hover{
     padding: 10px 70px 0 0;
     transition: all 0.9s;
     background: var(--button-color);

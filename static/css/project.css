@@ -32,7 +32,7 @@
 
 .project figure img{
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: .4s;
 }
 
@@ -71,6 +71,11 @@ button{
     margin-left: 4px;
     background: var(--navbar-color);
 }
+
+button a{
+    text-decoration: none;
+    color: var(--button-color);
+}
 @media only screen and (max-width:900px){
     .projects-description{
         font-size: 12px;
@@ -99,7 +104,6 @@ button{
 
 .post{
     position: absolute;
-    display: none;
     top: 100px;
     left: 260px;
     width: 600px;
@@ -124,6 +128,7 @@ button{
 }
 #description{
     line-height: 25px;
+    color: var(--navbar-color);
 }
 #profile h2{
     margin: 20px 0 10px 0;

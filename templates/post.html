@@ -44,37 +44,26 @@
                 </ul>
                 
             </nav>
-                
-            
         </div>
-        <div class="content">
-            
-            
-            
             <div class="project-container">
-                <div class="projects-description">
-                    <h3 class="h3">LES PROJECT QUE J'AI U A FOR</h3>
-                </div>
-               
-                <!-- ===============1=============== -->
-                {% for project in projects %}
-               <div class="project">
-                
-                <figure>
-                    <img src="{{project.image.url}}" alt="">
-                </figure>
-                <h2>{{project.title}}</h2>
-                    <p>{{project.description |slice:":200"}}<button><a href="{% url 'project_post' %}?project_id={{project.id}}">Lire</a></button></p>
+               <div class="post">
+                        <div id="project">
+                           <div id="profile">
+                               <figure>
+                                   <img src="{{project.image.url}}" alt="">
+                               </figure>
+                               <h2>{{project.title}}</h2>
+                           </div>
+                           <div id="description">
+                               {{project.description}}
+                           </div>
+                        </div>
                </div>
-               <!-- -------------Fin-------------------- -->
-       
-               {% endfor %}
-        </div>
-
         </div>
     </div>
     <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
 <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
 <script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/project.js' %}"></script>
 </body>
 </html>
