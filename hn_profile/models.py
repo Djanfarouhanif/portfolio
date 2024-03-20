@@ -13,7 +13,7 @@ class Content(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=200)
-    image = models.ImageField()
+    image = models.URLField()
     description = models.TextField()
 
     def __str__(self):

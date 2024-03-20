@@ -49,41 +49,21 @@
         <div class="content">
             <div class="profile">
             <div class="titre">
-                <h1>I'm</h1>
+                <h1>Je suis </h1>
                 <h1><span>{{profile.username}}</span>hanif</h1>
-                <h2>Python backend developer</h2>
+                <h2>développeur backend Python</h2>
 
             </div>
             <div class="profile-image">
                 <div>
-                    <img src="/static/image/2.jpg" alt="">
+                    <img src="{{profile.profile_img.url}}" alt="">
                 </div>
                
             </div>
             </div>
             <div class="about-me">
-                <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Reprehenderit quam odit quod repellat quasi at id ullam
-                            consequatur enim reiciendis nulla dolorum magni, aut quos 
-                            fuga repellendus distinctio beatae. Quis magni distinctio
-                            eveniet aliquid expedita rem quod ipsam itaque! Voluptatem
-                            blanditiis officia at sint, aliquid optio ab, reprehenderit
-                                provident eaque soluta doloribus recusandae aut rem dolore?
-                                Cumque minus dolores inventore ipsa reprehenderit in omnis at eveniet 
-                                quod? Asperiores consectetur illum sint nesciunt amet minus fuga
-                                perferendis consequatur alias voluptatem reiciendis distinctio praesentium
-                                voluptatibus inventore doloribus illo ullam voluptas deleniti, odio commodi 
-                                cumque. Asperiores delectus debitis dolor beatae voluptate quia consequatur, amet,
-                                    nulla odit eligendi voluptas molestiae fuga esse impedit libero provident accusamus? 
-                                    Labore, cumque. Labore necessitatibus possimus, recusandae esse ab, voluptas quia et
-                                    assumenda nostrum provident ipsa earum sequi itaque deleniti. Voluptas labore fuga possimus.
-                                    Asperiores ipsum necessitatibus quidem voluptatem, explicabo debitis totam nostrum, similique 
-                                    doloremque molestiae ex, impedit facere eos natus dolorem numquam tenetur distinctio deserunt optio!
-                                    Officia nihil veniam at blanditiis atque quia magni, ipsam neque illum nulla ut non facilis dignissimos dolor. Sit id
-                                    recusandae consectetur a asperiores numquam ex quod accusamus laudantium ipsam veniam 
-                                    repudiandae placeat quas eveniet esse exercitationem
-                            earum voluptatem magni, praesentium, nisi assumenda?
+                <div class="description" style="line-height: 25px;">
+                        {{profile.bio}}
                 </div>
             </div>
 

@@ -23,6 +23,7 @@ def project_post(request):
     return render(request, 'post.html', {'project':project})
 
 def contact(request):
+    
     return render(request, 'contact.html')
 
 def about(request):
