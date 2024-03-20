@@ -12,6 +12,7 @@ class Content(models.Model):
         return self.username
 
 class Project(models.Model):
+    project_url = models.URLField(null=True)
     title = models.CharField(max_length=200)
     image = models.URLField()
     description = models.TextField()

@@ -61,10 +61,10 @@
                <div class="project">
                 
                 <figure>
-                    <img src="{{project.image.url}}" alt="">
+                    <img src="{{project.image}}" alt="">
                 </figure>
                 <h2>{{project.title}}</h2>
-                    <p>{{project.description |slice:":200"}}<button><a href="{% url 'project_post' %}?project_id={{project.id}}">Lire</a></button></p>
+                    <p>{{project.description |slice:":200"}}......<button><a href="{% url 'project_post' %}?project_id={{project.id}}">Lire</a></button></p>
                </div>
                <!-- -------------Fin-------------------- -->
        
