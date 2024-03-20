@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
    
    
@@ -379,8 +380,8 @@ input:checked + .btn::before{
         width: 200px;
         transition: .4s;
         z-index: 2;
-    }
-    
-
+    }   
     
 }
+
+
