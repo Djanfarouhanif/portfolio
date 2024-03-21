@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
 
 from .models import Content,Project
 
@@ -23,7 +24,14 @@ def project_post(request):
     return render(request, 'post.html', {'project':project})
 
 def contact(request):
-    
+    if request.method == 'POST':
+        subject = "Message depuit mon portfolio"
+        message = request.POST['message']
+        sender_email = request.POST['email']
+        recipient_list = ['hanifdjanfarou8@gmail.com']
+
+        send_mail(subject, message, sender_email, recipient_list)
+
     return render(request, 'contact.html')
 
 def about(request):

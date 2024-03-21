@@ -52,6 +52,7 @@
             </div>
             <div class="form">
                 <form action="" method="post">
+                    {% csrf_token %}
                     <div class="name">
                         <input type="text" name="name" placeholder="Name">
                     </div>
