@@ -30,7 +30,13 @@ def contact(request):
         sender_email = request.POST['email']
         recipient_list = ['hanifdjanfarou8@gmail.com']
 
-        send_mail(subject, message, sender_email, recipient_list)
+        try:
+            send_mail(subject, message, sender_email, recipient_list)
+            messages.info(request, 'message envoyer')
+        except:
+            messages.info(request, 'message non envoyer')
+        
+        
 
     return render(request, 'contact.html')
 
