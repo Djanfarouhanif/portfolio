@@ -19,3 +19,8 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+class User_mail(models.Model):
+    email = models.EmailField()
+
+    def __str_(self):
+        return self.email
