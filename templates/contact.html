@@ -47,9 +47,12 @@
        
         <!-- -------------contact Form------------ -->
         <div class="content-form">
+            {% for message in messages %}
+            
+            <p style="color: green;">{{message}}</p>
+        {% endfor %}
             <div class="form-header">
-                <p>Lorem ipsum dolor sit amet consectetur 
-                     hic consequatur eum .</p>
+                <p style="font-size: 20px;">Merci de me contacter via ma messagerie .</p>
             </div>
             <div class="form">
                 <form action="" method="post">

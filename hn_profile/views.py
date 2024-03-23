@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.contrib  import messages
-from .models import Content,Project
+from .models import Content,Project, User_mail
 
 def index(request):
     all_profile = Content.objects.all()
@@ -32,11 +32,17 @@ def contact(request):
 
         try:
             send_mail(subject, message, sender_email, recipient_list)
-            messages.info(request, 'message envoyer')
+            messages.info(request, 'message envoyer acec succes')
         except:
+            print(User_mail,'*************')
             messages.info(request, 'message non envoyer')
         
-        
+        if User_mail.objects.filter(email=sender_email).exists():
+            pass
+        else:
+            
+            new_email = User_mail.objects.create(email=sender_email)
+            new_email.save()
 
     return render(request, 'contact.html')
 

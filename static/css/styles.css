@@ -113,6 +113,7 @@ li a:hover{
 .titre h1{
     
     margin: 20px;
+    margin-left: 0;
 }
 .titre h1 span{
     margin-right: 10px;
@@ -145,17 +146,40 @@ li a:hover{
    margin: 100px auto;
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 10px;
     
 }
 
-.description-index div{
+.description-index #contact{
     text-align: center;
-    background-color: green;
-    width: 200px;
+    font-size: 25px;
+    width: 100%;
     border-radius: 10px;
+
 }
 
+.tech{
+    width: 500px;
+    padding: 20px;
     
+}
+.tech h4{
+   text-align: center;
+    color: var(--button-color);
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.py , .js, .css, .html, .mysql{
+    
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    
+}
+.tech svg{
+    width: 50px
+}
 
 .logo{
     position: fixed;
