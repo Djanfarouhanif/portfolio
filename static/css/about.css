@@ -1,7 +1,7 @@
 .about-me{
     width: 700px;
     margin: 40px auto;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width:900px){
