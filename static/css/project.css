@@ -151,9 +151,8 @@ button a{
             width: 250px;
         }
         .post{
-            position: absolute;
-            top: 150px;
-            left: 50px;
+            position: relative;
+            left: -20px;
             width: 300px;
         }
         .projects-description h3{

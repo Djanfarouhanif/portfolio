@@ -28,15 +28,13 @@ def contact(request):
         subject = "Message depuit mon portfolio"
         message = request.POST['message']
         sender_email = request.POST['email']
-        recipient_list = ['hanifdjanfarou8@gmail.com']
+        recipient_list = [f'{sender_email}']
 
         try:
             send_mail(subject, message, sender_email, recipient_list)
             messages.info(request, 'message envoyer acec succes')
-        except:
-            print(User_mail,'*************')
-            messages.info(request, 'message non envoyer')
-        
+        except Execption as e:
+            messages.error(request, 'message non envoyer{}'.format(str(e)))
         if User_mail.objects.filter(email=sender_email).exists():
             pass
         else:

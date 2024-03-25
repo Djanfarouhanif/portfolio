@@ -92,6 +92,7 @@ p{
 }
 
 
+
 @media only screen and (max-width: 800px){
         p{
             width: 300px;
@@ -118,5 +119,11 @@ p{
     }
     .form-header p{
         left: 0px;
+    }
+
+    #message-txt{
+        position: relative;
+        left: -10px;
+        color: red;
     }
 }

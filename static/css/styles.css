@@ -423,6 +423,8 @@ footer h3{
     }
     .content{
         width: 300px;
+        margin-left: 0;
+
     }
 
     .description{

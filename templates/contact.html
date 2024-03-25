@@ -48,8 +48,11 @@
         <!-- -------------contact Form------------ -->
         <div class="content-form">
             {% for message in messages %}
-            
-            <p style="color: green;">{{message}}</p>
+            {% if message.tags == 'info' %}
+            <p style="color:green;" id="message-txt">{{message}}</p>
+            {% else %}
+            <p style="color: red;" id="message-txt">{{message}}</p>
+            {% endif %}
         {% endfor %}
             <div class="form-header">
                 <p style="font-size: 20px;">Merci de me contacter via ma messagerie .</p>
