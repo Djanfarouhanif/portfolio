@@ -4,7 +4,7 @@ import uuid
 
 class Content(models.Model):
     id = models.UUIDField(max_length=500, default=uuid.uuid4,primary_key=True)
-    profile_img = models.ImageField()
+    profile_img = models.URLField(null=True)
     bio = models.TextField()
     username = models.CharField(max_length=100)
 
