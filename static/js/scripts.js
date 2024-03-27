@@ -6,7 +6,6 @@ const ul = document.querySelector('.navBar ul ');
 const all_link = ul.querySelectorAll('a');
 const span = ul.querySelectorAll('span');
 
-
 if (localStorage.getItem('sliderState')==='checked'){
     sliderBtn.checked = true;
     document.body.classList.add("dark-theme");
@@ -22,7 +21,7 @@ sliderBtn.addEventListener('change', function(){
    
 });
 
- 
+
 menu.onclick = function(){
     navBar.classList.toggle("navBar-res");
     all_link.forEach((a)=>{
@@ -33,6 +32,8 @@ menu.onclick = function(){
     })
     
 }
+
+
 var menuName = menu.getAttribute('name')
 /* <ion-icon name="close-outline"></ion-icon> */
 menu.addEventListener('click', ()=>{

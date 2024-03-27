@@ -380,7 +380,7 @@ footer h3{
         background: none;
     }
     .navBar li span{
-        transform: translateX(-100px);
+        transform: translateX(10px); 
     }
     .navBar li ion-icon{
         visibility: visible;
@@ -394,8 +394,8 @@ footer h3{
         transition: all 0.9s;
         background: var(--button-color);
         visibility: visible;
-        
     }
+    
     .navBar ul li:hover .span{
         visibility: visible;
         transform: translateX(0px);
