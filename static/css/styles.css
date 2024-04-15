@@ -385,6 +385,17 @@ footer h3{
         visibility: visible;
         
     }
+
+    
+li a span{
+    position: absolute;
+    color: var(--text-color);
+    transform: translateX(0px);
+    transition:all  0.9s ;
+    z-index: -1;  
+
+   
+}
     
    
     .link:hover {
