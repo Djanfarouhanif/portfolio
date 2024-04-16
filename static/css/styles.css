@@ -48,6 +48,7 @@ ul{
     margin-left: 5px;
 }
 ul li a{
+    
     outline: none;
     text-decoration: none;
     transition: all 0.9s ;
@@ -379,7 +380,7 @@ footer h3{
         background: none;
     }
     .navBar li span{
-        transform: translateX(10px); 
+        transform: translateX(0px); 
     }
     .navBar li ion-icon{
         visibility: visible;
