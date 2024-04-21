@@ -379,9 +379,7 @@ footer h3{
       
         background: none;
     }
-    .navBar li span{
-        transform: translateX(0px); 
-    }
+   
     .navBar li ion-icon{
         visibility: visible;
         
@@ -389,9 +387,9 @@ footer h3{
 
     
 li a span{
-    position: absolute;
+    
     color: var(--text-color);
-    transform: translateX(0px);
+    transform: translateX(-100px);
     transition:all  0.9s ;
     z-index: -1;  
 
@@ -411,6 +409,10 @@ li a span{
         visibility: visible;
         transform: translateX(0px);
         
+    }
+    .span{
+        transform: translateX(0px);
+        position: relative;
     }
     .menu{
         margin: 58px auto;
