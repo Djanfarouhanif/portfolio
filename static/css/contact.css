@@ -53,6 +53,7 @@ form .name input{
     font-size: 15px;
     background: #ccc;
     width: 100%;
+    border: none;
 }
 
 form .message textarea{
